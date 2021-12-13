@@ -29,7 +29,7 @@
         new_type: auth
         new_control: required
         new_module_path: pam_google_authenticator.so
-        module_arguments: 'secret=${HOME}/.google_authenticator'
+        module_arguments: 'secret=${HOME}/.google_authenticator echo_verification_code'
         state: before
 
     - name: change /etc/motd
